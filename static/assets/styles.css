@@ -1,0 +1,140 @@
+body {
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 3.3rem;
+}
+.active {
+    color: #FB8500 !important;
+}
+
+/* navbar*/
+nav {
+    background-color: #023047;
+}
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #219ebc;
+}
+.navbar-toggler {  
+    border: transparent;
+    transition: transform 0.1s linear;
+}
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0;
+}
+.navbar-toggler:active {
+    transform: rotate(90deg);
+}
+.navbar-toggler-icon {
+    color: #8ecae6;
+    background-image: none;
+}
+.nav-link {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #8ecae6;
+}
+.nav-link:hover {
+    border-bottom: 1px solid #219ebc;
+    color: #219ebc;
+}
+
+/* footer */
+footer {
+    background-color: #023047;
+    position: absolute;
+    bottom: 0;
+    height: 3.3rem;
+    width: 100%;
+    color: #219ebc;
+    font-size: 1.15rem;
+}
+
+/* landing-page*/
+.landing-page {
+    text-align: center;
+}
+.landing-page > .row {
+    min-height: calc(100vh - 3.3rem - 74px);
+}
+.landing-content {
+    width: 80%;
+    max-height: 350px;
+}
+.landing-content h1 {
+    color: #023047;
+    font-size: 2.3em;
+}
+.landing-content p {
+    color: #fb8500;
+    font-size: 1.25em;
+    font-weight: 500;
+}
+.landing-content button {
+    background-color: #023047;
+}
+.landing-content button:hover {
+    background-color: #023047;
+}
+.landing-content a {
+    color: #8ecae6;
+    text-decoration: none;
+    font-weight: 500;
+}
+.landing-img-container {
+    width: 65%;
+    max-width: 350px;
+    max-height: 600px;
+}
+
+/* Form Page */
+.form-container {
+    min-height: calc(100vh - 3.3rem - 74px);
+    border-left: 1px solid #219ebc;
+}
+.form-page-head {
+    font-size: 1.85em;
+    text-align: center;
+    color: #023047;
+}
+.form-container h2 {
+    font-size: 1.3rem;
+    color: #023047;
+    border-bottom: 1px solid #219ebc;
+}
+.warn {
+    color: #FFB703;
+    font-style: italic;
+    font-size: .9rem;
+}
+#address {
+    resize: none;
+}
+.form-container button {
+    background-color: #023047;
+    color: #8ecae6;
+}
+
+@media screen and (max-width: 410px) {
+    footer {
+        height: 4rem;
+    }
+}
+
+@media screen and (min-width: 765px) {
+    .landing-content {
+        width: 65%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .landing-content {
+        height: 50%;
+        width: 80%;
+    }
+    .landing-img-container {
+        width: 100%;
+        max-width: 600px;
+    }
+}

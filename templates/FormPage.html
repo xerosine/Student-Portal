@@ -1,0 +1,82 @@
+{% extends 'Base.html' %}
+
+{% block register_active %}active{% endblock %}
+
+{% block content %}
+<div class="container d-flex justify-content-center align-items-center px-1 px-lg-4">
+    <div class="form-container px-2 px-lg-3 my-3 mx-lg-5">
+        <h1 class="form-page-head my-5">Student Portal Form</h1>
+        <form action="#" method="post" id="studentInfo">
+            <p class="mb-0 warn">Please fill in all required information!</p>
+            <h2 class="mb-3 pb-2">Personal Information</h2>
+            <div id="personalInfo" class="row px-1 px-sm-3">
+                <div class="col-12 mb-4">
+                    <label for="userImage" class="form-label">Upload Image</label>
+                    <input type="file" name="userImage" id="userImage" class="form-control">
+                </div>
+                <div class="col-12 col-sm-6 mb-4">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" name="firstName" id="firstName" class="form-control">
+                </div>
+                <div class="col-12 col-sm-6 mb-4">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" name="lastName" id="lastName" class="form-control">
+                </div>
+                <div class="col-12 col-sm-6 mb-4">
+                    <label for="middleName" class="form-label">Middle Name</label>
+                    <input type="text" name="middleName" id="middleName" class="form-control">
+                </div>
+                <div class="col-12 col-sm-6 mb-4">
+                    <label for="userEmail" class="form-label">Email</label>
+                    <input type="email" name="userEmail" id="userEmail" class="form-control">
+                </div>
+                <div class="col-12 col-sm-6 mb-4">
+                    <label for="phoneNumber" class="form-label">Phone Number</label>
+                    <input type="text" name="phoneNumber" id="phoneNumber" class="form-control">
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mb-4">
+                    <label for="dateOfBirth" class="form-label">Date of Birth</label>
+                    <input type="date" name="dateOfBirth" id="dateOfBirth" class="form-control">
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mb-4 pt-sm-0">
+                    <label for="" class="form-label d-block">Gender</label>
+                    <label for="male" class="form-label ms-2">Male</label>
+                    <input type="checkbox" name="gender" id="male" class="form-check-input">
+                    <label for="female" class="form-label ms-2">Female</label>
+                    <input type="checkbox" name="gender" id="female" class="form-check-input">
+                </div>
+                <div class="col-12 col-md-10 col-lg-6 mb-4">
+                    <label for="address">Address</label>
+                    <textarea name="address" id="address" class="form-control" rows="2"></textarea>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                    <label for="StateOfOrigin" class="form-label">State of Origin</label>
+                    <select name="stateOfOrigin" id="stateOfOrigin" class="form-select">
+                        <option selected>Select State</option>
+                    </select>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                    <label for="localGovt" class="form-label">Local Government</label>
+                    <select name="localGovt" id="localGovt" class="form-select">
+                        <option selected>Select Local Government</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-8 col-lg-6 mb-4">
+                    <label for="nextOfKin" class="form-label">Next of Kin</label>
+                    <input type="text" name="nextOfKin" id="nextOfKin" class="form-control">
+                </div>
+            </div>
+            <h2 class="mb-3 mt-2 pb-2">Academic Information</h2>
+            <div id="academicInfo" class="row px-1 px-sm-3">
+                <div class="col-8 col-md-4 mb-5">
+                    <label for="jambScore" class="form-label">Jamb Score</label>
+                    <input type="number" name="jambScore" id="jambScore" class="form-control">
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn col-4 mb-4">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

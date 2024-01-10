@@ -1,0 +1,22 @@
+{% extends 'Base.html' %}
+
+{% block home_active %}active{% endblock %}
+
+{% block content %}
+<div class="container-fluid landing-page">
+    <div class="row">
+        <div class="col-12 col-lg-6 d-flex justify-content-center order-2 order-lg-1">
+            <div class="landing-content align-self-center mb-5">
+                <h1 class="my-4">Student Main portal</h1>
+                <p class="">Ustacky Student Portal Registration. Join us today for your online courses</p>
+                <button class="btn btn-lg mt-3 mb-5"><a href="/register" class="pb-1">Get Started</a></button>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 d-flex justify-content-center order-1 order-lg-2">
+            <div class="landing-img-container mt-4 mb-lg-5 align-self-center">
+                <img class="img-fluid" src="..\static\assets\images\homepage.svg" alt="Learning Image">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
