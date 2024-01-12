@@ -51,7 +51,7 @@ footer {
     font-size: 1.15rem;
 }
 
-/* landing-page*/
+/* Landing page*/
 .landing-page {
     text-align: center;
 }
@@ -88,7 +88,7 @@ footer {
     max-height: 600px;
 }
 
-/* Form Page */
+/* Form page */
 .form-container {
     min-height: calc(100vh - 3.3rem - 74px);
     border-left: 1px solid #219ebc;
@@ -116,6 +116,33 @@ footer {
     color: #8ecae6;
 }
 
+/* All details page  */
+.details-page {
+    min-height: calc(100vh - 3.3rem - 74px);
+    max-height: 670px;
+}
+.details-page .info-container {
+    background-color: #8ecae6;
+    color: #023047;
+}
+.filter-btn, #filters button {
+    background-color: #023047 !important;
+    color: #8ecae6 !important;
+    font-weight: 500
+}
+tbody {
+    border-top: 2px solid #219ebc;
+}
+td:first-child, th:first-child {
+    border-right: 2px solid #219ebc;
+}
+th {
+    color: #023047 !important;
+}
+table svg {
+    color: #023047;
+}
+
 @media screen and (max-width: 410px) {
     footer {
         height: 4rem;
@@ -125,6 +152,9 @@ footer {
 @media screen and (min-width: 765px) {
     .landing-content {
         width: 65%;
+    }
+    .details-page {
+        min-height: 0;
     }
 }
 
@@ -136,5 +166,8 @@ footer {
     .landing-img-container {
         width: 100%;
         max-width: 600px;
+    }
+    .details-page {
+        max-height: 470px;
     }
 }

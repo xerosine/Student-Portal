@@ -12,6 +12,10 @@ def landing():
 def register():
     return render_template('FormPage.html')
 
+@app.route('/allDetails')
+def allDetails():
+    return render_template('AllDetails.html')
+
 
 if __name__ == "__main__":
     app.run(debug=True)
