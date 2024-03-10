@@ -52,10 +52,10 @@ footer {
 }
 
 /* Landing page*/
-.landing-page {
+#landing-page {
     text-align: center;
 }
-.landing-page > .row {
+#landing-page > .row {
     min-height: calc(100vh - 3.3rem - 74px);
 }
 .landing-content {
@@ -117,11 +117,11 @@ footer {
 }
 
 /* All details page  */
-.details-page {
+#details-page {
     min-height: calc(100vh - 3.3rem - 74px);
     max-height: 670px;
 }
-.details-page .info-container {
+#details-page .info-container {
     background-color: #8ecae6;
     color: #023047;
 }
@@ -143,6 +143,34 @@ table svg {
     color: #023047;
 }
 
+/* Profile page */
+.img-wrapper {
+    width: 8rem;
+    border: transparent;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile-pic {
+    height: 8rem;
+    width: 8rem;
+}
+#profile-page h2 {
+    color: #023047;
+    border-bottom: 1px solid #219ebc;
+    padding-bottom: 0.3em;
+}
+.profile-list {
+    list-style: none;
+    padding-left: 1rem;
+}
+.profile-list li {
+    margin-bottom: 0.5em;
+    font-weight: 500;
+}
+.profile-list select {
+    width: 10rem;
+}
+
 @media screen and (max-width: 410px) {
     footer {
         height: 4rem;
@@ -153,8 +181,15 @@ table svg {
     .landing-content {
         width: 65%;
     }
-    .details-page {
+    #details-page {
         min-height: 0;
+    }
+    .img-wrapper {
+        width: 11rem;
+    }
+    .profile-pic {
+        height: 11rem;
+        width: 11rem;
     }
 }
 
@@ -167,7 +202,7 @@ table svg {
         width: 100%;
         max-width: 600px;
     }
-    .details-page {
+    #details-page {
         max-height: 470px;
     }
 }

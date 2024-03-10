@@ -3,7 +3,7 @@
 {% block register_active %}active{% endblock %}
 
 {% block content %}
-<div class="container d-flex justify-content-center align-items-center px-1 px-lg-4">
+<div id="form-page" class="container d-flex justify-content-center align-items-center px-1 px-lg-4">
     <div class="form-container px-2 px-lg-3 my-3 mx-lg-5">
         <h1 class="form-page-head my-5">Student Portal Form</h1>
         <form action="#" method="post" id="studentInfo">
@@ -12,7 +12,7 @@
             <div id="personalInfo" class="row px-1 px-sm-3">
                 <div class="col-12 mb-4">
                     <label for="userImage" class="form-label">Upload Image</label>
-                    <input type="file" name="userImage" id="userImage" class="form-control">
+                    <input type="file" name="userImage" id="userImage" class="form-control" enctype="multipart/form-data">
                 </div>
                 <div class="col-12 col-sm-6 mb-4">
                     <label for="firstName" class="form-label">First Name</label>

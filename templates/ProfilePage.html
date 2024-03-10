@@ -1,0 +1,51 @@
+{% extends 'Base.html' %} 
+
+{% block register_active %}active{% endblock %} 
+
+{% block content %} 
+<div id="profile-page" class="container pb-5">
+    <div class="row mb-3 my-md-5">
+        <div class="col-12 col-md-3 my-4 mt-md-0">
+            <div class="img-wrapper mx-auto">
+                <img src="..\static\images\876526~2.jpg" alt="profile picture" class="profile-pic">
+            </div>
+        </div>
+        <div class="col-12 col-md-9">
+            <div class="container">
+                <h2>Personal Information</h2>
+                <div>
+                    <ul class="profile-list">
+                        <li>Email: ayangaoluwamurewa@abc.com</li>
+                        <li>Gender: male</li>
+                        <li>Phone Number: 09061742137</li>
+                        <li>Date of Birth: 2005-03-26</li>
+                        <li>Address: 22, peace drive</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-4 mb-md-5">
+        <h2>Other Information</h2>
+        <ul class="profile-list">
+            <li>State of Origin: Ogun State</li>
+            <li>Local Government: Ijebu North-East</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h2>Academic Information</h2>
+        <ul class="profile-list">
+            <li>Next of Kin: Abigail Adebisi</li>
+            <li>Jamb Score: 307</li>
+            <li>Status: Admitted</li>
+            <li>
+                Change Status:
+                <Select class="form-select d-inline-block">
+                    <option value="admitted">Admitted</option>
+                    <option value="pending">Pending</option>
+                </Select>
+            </li>
+        </ul>
+    </div>
+</div>
+{% endblock %}
